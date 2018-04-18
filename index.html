@@ -161,7 +161,7 @@
 								<img src="imagenes/hcwork-white.svg">
 								<div class="row">
 									<div class="col-md-6">
-										
+										<img src="imagenes/rueda.png" class="img-responsive">
 									</div>
 
 									<div class="col-md-6">
@@ -205,6 +205,37 @@
 										</ul>
 									</div>
 								</div>			
+							</article>
+
+							<article class="well hcpay">
+								<img src="imagenes/hcpay-white.svg">
+								<div class="row">
+									<div class="col-md-12">
+										
+									</div>
+
+									<div class="col-md-6">
+										
+										<img src="imagenes/laptop.png" class="img-responsive">
+									</div>
+
+									<div class="col-md-6"><p class="big">HCpay es tu aliado estratégico de la gestión de payroll, brindando un Servicio integral de Outsourcing, o focalizando en tus necesidades puntuales:</p>
+
+										<ul>
+											<li><span class="ion-checkmark"></span> Servicio de Liquidación y acreditación de Sueldos con detalle de Impuesto a las Ganancias </li>
+											<li><span class="ion-checkmark"></span> Libro Ley, Asientos contables, Repotes</li>
+											<li><span class="ion-checkmark"></span> SICORE AFIP</li>
+											<li><span class="ion-checkmark"></span> Certificación de Servicios</li>
+											<li><span class="ion-checkmark"></span> Certificado del art.80</li>
+											<li><span class="ion-checkmark"></span> CAT AFIP</li>
+											<li><span class="ion-checkmark"></span> Mi Simplificación AFIP</li>
+										</ul>
+
+										<p><strong>Actualmente trabajamos con más de 20 empresas, procesando más de 80.000 liquidaciones anuales por más de $1.500.000.000, para personal Fuera y dentro de convenio, con elevado nivel de performance.</strong></p>
+
+					<p>Nos adaptamos a las a las necesidades y particularidades de cada actividad, para Grandes Empresas o PyMES</p>
+									</div>
+								</div>			
 							</article>						
 						</div>
 					</div>
@@ -214,36 +245,20 @@
 	</section>
 
 
-	<section id="servicios" class="servicios">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6">
-					<h2>Outsourcing</h2>
-					<p>Workia es tu aliado estratégico de la gestión de payroll, brindando un Servicio integral de Outsourcing, o focalizando en tus necesidades puntuales:</p>
-
-					<ul>
-						<li><span class="ion-checkmark"></span> Servicio de Liquidación y acreditación de Sueldos con detalle de Impuesto a las Ganancias </li>
-						<li><span class="ion-checkmark"></span> Libro Ley</li>
-						<li><span class="ion-checkmark"></span> Asiento Contable</li>
-						<li><span class="ion-checkmark"></span> Reportes</li>
-						<li><span class="ion-checkmark"></span> SICORE AFIP</li>
-						<li><span class="ion-checkmark"></span> SICOSS AFIP</li>
-						<li><span class="ion-checkmark"></span> Certificación de Servicios</li>
-						<li><span class="ion-checkmark"></span> Certificado del art.80</li>
-						<li><span class="ion-checkmark"></span> CAT AFIP</li>
-						<li><span class="ion-checkmark"></span> Mi Simplificación AFIP</li>
-					</ul>
-				</div>
-
-				<div class="col-md-6">
-					<img src="imagenes/laptop.png" class="img-responsive">
-				</div>
-
-				<div class="col-md-8 col-md-offset-2">
-					<p><strong>Actualmente trabajamos con más de 20 empresas, procesando más de 80.000 liquidaciones anuales por más de $1.500.000.000, para personal Fuera y dentro de convenio, con elevado nivel de performance.</strong></p>
-
-					<p>Nos adaptamos a las a las necesidades y particularidades de cada actividad, para Grandes Empresas o PyMES</p>
- 
+	<section class="suscribite">
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">
+						<h5 class="text-uppercase">SUSCRIBITE</h5>
+						<h4>Recibí nuestras novedades en tu email</h4>
+						<form>
+							<div class="col-md-4 col-md-offset-4">
+								<input type="email" name="email" placeholder="Ingresá tu email" class="form-control input-lg">
+							</div>
+							
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -284,6 +299,15 @@
 				scrollTop: $position
 			}, $position, 'easeInOutQuint' /* speed */ );
  		})
+
+ 		$(window).scroll(function() {
+  			
+  			if($("nav").offset().top>=100){
+  				$("nav").addClass("back");
+  			}else{
+  				$("nav").removeClass("back");
+  			}
+		});
  	})
  </script>
 
