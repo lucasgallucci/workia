@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WORKIA · smart solutions for businesses</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WORKIA · smart solutions for businesses</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" media="screen" href="css/particles.css">
 
@@ -26,7 +28,7 @@
 
 	<meta property="og:url" content="http://www.birpin.com.ar" />
 	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Birpin · No busques trabajo, el trabajo te encuentra a vos" />
+	<meta property="og:title" content="Workia · Tecnología de avanzada para la gestión de Recursos Humanos" />
 	<meta property="og:description" content="Subí tu CV y formá parte de la primera plataforma inteligente de búsqueda laboral" />
 	<meta property="og:image" content="http://www.birpin.com.ar/imagenes/facebook.jpg" />
 
@@ -40,23 +42,23 @@
 	  gtag('js', new Date());
 	  gtag('config', 'UA-108351594-1');
 	</script>
-
+</head>
 <body>
 	<header>
-		<nav>
+		<nav id="menu">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
 						<div class="content">
 							<div class="iso">
-								<img src="imagenes/iso.svg" class="">
+								<img src="imagenes/logo-white.svg" class="">
 							</div>
 							<div class="menu">
 								<ul>
-									<li><a href="">Sobre Workia</a></li>
-									<li><a href="">Productos</a></li>
-									<li><a href="">Tecnologías</a></li>
-									<li><a href="">Contacto</a></li>
+									<li><a href="#" data-goto="about">Sobre Workia</a></li>
+									<li><a href="#" data-goto="productos">Productos</a></li>
+									<li><a href="#" data-goto="servicios">Servicios</a></li>
+									<li><a href="#" data-goto="contacto">Contacto</a></li>
 								</ul>
 							</div>
 						</div>
@@ -69,8 +71,14 @@
 				<div class="row">
 					<div class="col-xs-12 no-position">
 						<div class="logo">
-							<img src="imagenes/logo-white.svg" class="">
+							<h1>Llega la <span class="big">revolución tecnológica</span> a la gestión de Recursos Humanos</h1>
+					
+							<div class="productos">
+								<img src="imagenes/birpin-white.svg" class="">
+								<img src="imagenes/hcwork-white.svg" class="">
+							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -78,19 +86,38 @@
 	</header>
 
 
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-12">
 					<div class="row">
 						<article class="col-xs-12 col-md-6">
-							<h2>Sobre Workia</h2>
-							<p>
+
+							<img src="imagenes/workia.svg" style="max-width: 250px;">
+		<!-- 					<p>
 								Workia es una empresa IT que nace con el objetivo crear herramientas con soluciones en Recursos Humanos para empresas.
 							</p>
 							<p>
 								Desarrollamos productos con las últimas teconologías del mercado, creando así plataformas robustas, confiables y ágiles para la administración de los recursos de su compañía.
+							</p> -->
+							<p>
+								Workia, es una organización disruptiva, que opera en LATAM y USA y  que cuenta con productos de clase mundial a costos competitivos gracias a su tecnología innovadora y de última generación.
 							</p>
+
+							<article class="flex">
+								<img src="imagenes/hcwork.svg">
+								<p>
+									<strong>HCWork</strong>, nuestro sistema de Gestión integrál de RRHH, te permitrá a través de su acceso 100% cloud y mobile, lograr una gestión ágily  potente, liquidando tu npmina en minutos, gestionando el desempeño de tus colaboradores, armando planes de desarrollo.  
+								</p>
+							</article>
+							
+							<article class="flex margintop30">
+								<img src="imagenes/birpin.svg">
+								<p>
+									<strong>Birpin</strong>, Portal de búsqueda y relacionamiento profesional con avanzadas técnicas de Inteligencia Artificial aplicada, para un proceso de selección mas rápido, ágil y preciso a la hora de matchear postulantes.
+								</p>
+							</article>
+
 						</article>
 
 						<div class="col-md-6">
@@ -108,8 +135,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 text-center">
+						<h5 class="text-uppercase">Nuesta misión</h5>
 						<h3>
-							Brindamos servicio personalizado a través de nuestro staff senior de expertos,de más de 20 años de experiencia y con gran expertise en diferentes rubros e industrias.
+							 Transformar la forma de gestionar el mundo digital de Recursos Humanos.
 						</h3>
 					</div>
 				</div>
@@ -117,7 +145,7 @@
 		</div>
 	</section>
 
-	<section class="productos">
+	<section class="productos" id="productos">
 		<div class="content">
 			<div class="container">
 				<div class="row">
@@ -127,6 +155,33 @@
 						</h2>
 
 						<div class="productos-cards">
+
+
+							<article class="well hcwork">
+								<img src="imagenes/hcwork-white.svg">
+								<div class="row">
+									<div class="col-md-6">
+										
+									</div>
+
+									<div class="col-md-6">
+										<p class="big">El sistema para el mundo laboral del futuro, hoy, al alcance de todas las organizaciones y profesionales.</p>
+
+										<p class="big">
+										Hcw es un Sistema gestión integral de HR, que utiliza tecnología de vanguardia de inteligencia artificial.</p>
+										<ul>
+											<li><span class="ion-checkmark"></span> El sistema para el mundo laboral del futuro, hoy, al alcance de todas las organizaciones y profesionales Tipo presentación: Hcw es un Sistema gestión integral de HR, que utiliza tecnología de vanguardia de inteligencia artificial.</li>
+											<li><span class="ion-checkmark"></span> 100% cloud,con acceso Mobile</li>
+											<li><span class="ion-checkmark"></span> Self-service para colaboradores en sus distintos módulos. </li>
+											<li><span class="ion-checkmark"></span> Ágil implementación, sin dependencia ni requerimiento de los dificultuosos procesos de implementación.</li>
+											<li><span class="ion-checkmark"></span>  Sistema de Reporting de alto impacto, configurable a medida.</li>
+											<li><span class="ion-checkmark"></span>   Metodologías de accesos y costos on demand, donde solo pagas por lo que usas.</li>
+										</ul>
+									</div>
+								</div>			
+							</article>
+
+
 							<article class="well birpin">
 								<img src="imagenes/birpin-white.svg">
 								<div class="row">
@@ -140,41 +195,17 @@
 									</div>
 
 									<div class="col-md-6"><p class="big">Birpin es una plataforma de búsqueda laboral y relacionamiento profesional que, gracias a su tecnología de Inteligencia Artificial, permite ahorrar tiempos y costos a empresas en sus procesos de búsqueda laboral.</p>
+
 										<ul>
-											<li><span class="ion-checkmark"></span> Recomendación de candidatos</li>
-											<li><span class="ion-checkmark"></span> Timeline de procesos de selección</li>
-											<li><span class="ion-checkmark"></span> Publicación de anuncios 100% gratuita</li>
+											<li><span class="ion-checkmark"></span> Recomendación inteligente de candidatos</li>
+											<li><span class="ion-checkmark"></span> Administración de Procesos de selección sin costos, con etapas configurables por la empresa</li>
+											<li><span class="ion-checkmark"></span> Publicaciones 100% gratuitas: Ofrecemos un sistema de créditos donde solo se cobrará por los candidatos que visualicen.</li>
 											<li><span class="ion-checkmark"></span> Fuerte inversión publicitaria</li>
-											<li><span class="ion-checkmark"></span> Acompañamiento de marcas de primera línea</li>
-											<li><span class="ion-checkmark"></span> Tecnología de avanzada con Inteligencia Artificial</li>
+											<li><span class="ion-checkmark"></span> Más de 300 empresas de primera línea nos acompañan.</li>
 										</ul>
 									</div>
 								</div>			
-							</article>
-
-
-							<article class="well hcwork">
-								<img src="imagenes/hcwork-white.svg">
-								<div class="row">
-									<div class="col-md-6">
-										<img src="imagenes/laptop.png" class="img-responsive">
-									</div>
-
-									<div class="col-md-6">
-										<p class="big">HCwork es un sistema inteligente para la Gestión integral del Capital Humano. Nuestro sistema está basado en tecnología de última generación y almacenamiento 100% cloud, lo cual lo hace robusto, ágil y poderoso.</p>
-										<ul>
-											<li><span class="ion-checkmark"></span> 11 Módulos de Recursos Humanos</li>
-											<li><span class="ion-checkmark"></span> Fácil implementación, con experiencia de usuario intuitiva y flexible</li>
-											<li><span class="ion-checkmark"></span> Self-service para colaboradores</li>
-											<li><span class="ion-checkmark"></span> Big Data para la toma de decisiones extraordinarias en poco tiempo</li>
-											<li><span class="ion-checkmark"></span> Sistema de reportes customizables</li>
-											<li><span class="ion-checkmark"></span> Liquidación de sueldos en tiempo record con legislaciones actualizadas</li>
-										</ul>
-									</div>
-								</div>			
-							</article>
-
-						
+							</article>						
 						</div>
 					</div>
 				</div>
@@ -183,11 +214,78 @@
 	</section>
 
 
+	<section id="servicios" class="servicios">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Outsourcing</h2>
+					<p>Workia es tu aliado estratégico de la gestión de payroll, brindando un Servicio integral de Outsourcing, o focalizando en tus necesidades puntuales:</p>
+
+					<ul>
+						<li><span class="ion-checkmark"></span> Servicio de Liquidación y acreditación de Sueldos con detalle de Impuesto a las Ganancias </li>
+						<li><span class="ion-checkmark"></span> Libro Ley</li>
+						<li><span class="ion-checkmark"></span> Asiento Contable</li>
+						<li><span class="ion-checkmark"></span> Reportes</li>
+						<li><span class="ion-checkmark"></span> SICORE AFIP</li>
+						<li><span class="ion-checkmark"></span> SICOSS AFIP</li>
+						<li><span class="ion-checkmark"></span> Certificación de Servicios</li>
+						<li><span class="ion-checkmark"></span> Certificado del art.80</li>
+						<li><span class="ion-checkmark"></span> CAT AFIP</li>
+						<li><span class="ion-checkmark"></span> Mi Simplificación AFIP</li>
+					</ul>
+				</div>
+
+				<div class="col-md-6">
+					<img src="imagenes/laptop.png" class="img-responsive">
+				</div>
+
+				<div class="col-md-8 col-md-offset-2">
+					<p><strong>Actualmente trabajamos con más de 20 empresas, procesando más de 80.000 liquidaciones anuales por más de $1.500.000.000, para personal Fuera y dentro de convenio, con elevado nivel de performance.</strong></p>
+
+					<p>Nos adaptamos a las a las necesidades y particularidades de cada actividad, para Grandes Empresas o PyMES</p>
+ 
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="contacto">
+		<ul class="social">
+			<li><a href="https://www.linkedin.com/company/birpin/"
+				target="_blank"><span class="ion-social-linkedin"></span></a></li>
+			<li><a href="https://www.facebook.com/Birpin/" target="_blank"><span
+					class="ion-social-facebook"></span></a></li>
+			<li><a href="https://www.instagram.com/birpinapp/" target="_blank"><span
+					class="ion-social-instagram"></span></a></li>
+		</ul>
+
+		<ul class="tyc">
+			<li>® derechos reservados</li>
+		</ul>
+	</footer>
+
+
 
 	<!-- scripts -->
 <script src="particles.js"></script>
 <script src="js/app.js"></script>
 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script type="text/javascript" src="http://gsgd.co.uk/sandbox/jquery/easing/jquery.easing.1.3.js"></script>
+
+ <script type="text/javascript">
+ 	$(document).on("ready", function(){
+ 		$("#menu a").on("click", function(){
+ 			$link="#"+$(this).attr("data-goto");
+ 			var $position = $($link).offset().top;
+
+ 			
+			$("body, html").animate({
+				scrollTop: $position
+			}, $position, 'easeInOutQuint' /* speed */ );
+ 		})
+ 	})
+ </script>
 
 </body>
 
