@@ -73,13 +73,13 @@ nav{
 		justify-content: space-beetwen;
 		align-items: center;
 		.iso{
-			flex: 1;
+			
 			img{
 				max-width: 150px;
 			}
 		}
 		.menu{
-			flex: 1;
+			width: 100%;
 			ul{
 				list-style: none;
 				display: flex;
@@ -102,6 +102,19 @@ nav{
 	&.back{
 		@extend .gradient-blue;
 	}
+
+	@media (max-width: 700px){
+		.content{
+			.iso{
+				img{
+					max-width: 200px;
+				}
+			}
+			.menu{
+				display: none;
+			}
+		}
+	}
 }
 
 header{
@@ -122,10 +135,31 @@ header{
 		transform: translateY(-50%) translateX(-50%);
 		left: 50%;
 
+		h1{
+			font-size: 50px;
+		    color: white;
+		    font-weight: 300;
+		    letter-spacing: -2px;
+		    .big{
+		    	font-weight: 900;
+		    	text-transform: uppercase;
+		    }
+		}
+		.separador{
+	    	height: 4px;
+	    	width: 100px;
+	    	background: white;
+	    	margin: 40px 0;
+	    }
+
+		
+
 		.productos{
 			display: flex;
 		    align-items: center;
 		    margin-top: 30px;
+
+
 			img{
 				max-width: 100px;
 				&:first-child{
@@ -137,15 +171,28 @@ header{
 
 	}
 
-	h1{
-		font-size: 50px;
-	    color: white;
-	    font-weight: 300;
-	    letter-spacing: -2px;
-	    .big{
-	    	font-weight: 900;
-	    	text-transform: uppercase;
-	    }
+	@media (max-width: 1000px){
+		height: 600px;
+		.logo{
+			transform: translateY(-50%) translateX(-25%);
+			left: 25%;
+			h1{
+				font-size: 40px;
+				letter-spacing:-1px;
+		    }
+		}
+	}
+
+	@media (max-width: 600px){
+		height: 600px;
+		.logo{
+			transform: translateY(-50%) translateX(-25%);
+			left: 25%;
+			h1{ 
+				font-size: 30px;
+				letter-spacing:0px;
+		    }
+		}
 	}
 }
 
@@ -174,8 +221,18 @@ section{
 			p{
 				line-height: 22px;
 			}
-		}
+		
+			@media (max-width: 600px){
+				flex-wrap: wrap;
+				img,p{
+					width: 100%;
+				}
 
+				img{
+					margin: auto;
+				}
+			}
+		}
 	}
 
 
@@ -218,9 +275,7 @@ section{
 		}
 		.productos-cards{
 			margin-top: 30px;
-			justify-content: center;
 			article{
-				flex:1;
 				img{
 					margin: auto;
 					display: block;
@@ -257,6 +312,23 @@ section{
 
 					&.hcpay{
 						@extend .gradient-hcpay;
+					}
+				}
+			}
+		}
+
+		@media (max-width: 600px){
+			.big{
+				font-size:20px;
+				line-height:25px;
+			}
+
+			.productos-cards{
+				article{
+					ul{
+						li{
+							font-size: 12px;
+						}
 					}
 				}
 			}
