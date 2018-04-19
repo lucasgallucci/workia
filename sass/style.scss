@@ -361,6 +361,14 @@ section{
 footer{
 	background: #4d4d4d;
 	padding: 10px 0;
+	color: white;
+
+	address{
+		color: white;
+		a{
+			color: white;
+		}
+	}
 	.social{
 		display: flex;
 		padding: 0;

@@ -251,15 +251,23 @@
 		<div class="content">
 			<div class="container">
 				<div class="row">
-					<div class="col-xs-12 text-center">
+					<div class="col-sm-8 col-md-6 col-sm-offset-2 col-md-offset-3 text-center">
 						<h5 class="text-uppercase">SUSCRIBITE</h5>
 						<h4>Recibí nuestras novedades en tu email</h4>
-						<form>
-							<div class="col-md-4 col-md-offset-4">
-								<input type="email" name="email" placeholder="Ingresá tu email" class="form-control input-lg">
-							</div>
-							
-						</form>
+						<form class="form-horizontal" method="POST">
+							<input type="hidden" name="recipient" value="info@workiasolutions.com">
+							<input type="hidden" name="redirect" value="gr">
+						  	 <div class="input-group">
+      							<input type="text" class="form-control input-lg" required placeholder="escribe tu e-mail">
+							     <span class="input-group-btn">
+							        <button class="btn btn-default btn-lg" type="button">suscribirme!</button>
+							      </span>
+							    </div>
+						  </form>
+
+						  <div id="ok">
+						  	<p>¡Gracias por susbribirte a nuestra lista de novedades!</p>
+						  </div>
 					</div>
 				</div>
 			</div>
@@ -267,18 +275,24 @@
 	</section>
 
 	<footer id="contacto">
-		<ul class="social">
-			<li><a href="https://www.linkedin.com/company/birpin/"
-				target="_blank"><span class="ion-social-linkedin"></span></a></li>
-			<li><a href="https://www.facebook.com/Birpin/" target="_blank"><span
-					class="ion-social-facebook"></span></a></li>
-			<li><a href="https://www.instagram.com/birpinapp/" target="_blank"><span
-					class="ion-social-instagram"></span></a></li>
-		</ul>
-
-		<ul class="tyc">
-			<li>® derechos reservados</li>
-		</ul>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<address>
+  						<h4>Workia </h4><br>
+  						Rivadavia 620 · Piso 2<br>
+ 						Ciudad Autónoma de Buenos Aires. CP: 1005<br><br>
+  						<abbr title="Phone">Teléfono:</abbr> (54 11) 2150-4410
+					</address>
+					
+					<br>
+					<address>
+					  <a href="mailto:info@workiasolutions.com">info@workiasolutions.com</a>
+					</address>
+						
+				</div>
+			</div>
+		</div>
 	</footer>
 
 
@@ -310,6 +324,32 @@
   				$("nav").removeClass("back");
   			}
 		});
+
+		alto=$("form").css("height");
+		$("#ok").css({
+			"height":"0",
+			"overflow":"hidden"
+			});
+ 	
+
+ 		$("form").submit(function(){
+        	//$("form").css("height","0");
+ 			var url = "enviar.php";
+    		$.ajax({
+           		type: "POST",
+           		url: url,
+           		data: $("form").serialize(),
+           		success: function(data){  		
+              		$("#ok").css("height", alto);
+              		$("form").css({
+						"height":"0",
+						"overflow":"hidden"
+					});
+           		}
+         	});
+    		return false; // Evitar ejecutar el submit del formulario.
+ 		});
+ 		
  	})
  </script>
 

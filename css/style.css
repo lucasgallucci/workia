@@ -238,7 +238,12 @@ section.servicios {
 
 footer {
   background: #4d4d4d;
-  padding: 10px 0; }
+  padding: 10px 0;
+  color: white; }
+  footer address {
+    color: white; }
+    footer address a {
+      color: white; }
   footer .social {
     display: flex;
     padding: 0;
